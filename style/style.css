@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: flex;
+    background: #004980;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-inside{
+    display: flex;
+    background: #C2F5FF;
+    height: 459px;
+    width: 480px;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-text{
+    height: 98px;
+    width: 208px;
+}
+
+.text{
+    text-align: center;
+    padding-top: 52px;
+    color: #004980;
+    font-size: 40px;
+    line-height: 48px;
+    align-items: center;
+}
+
+.difficulty-game{
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.one{
+    height: 97px;
+    width: 98px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+}
+
+.two{
+    height: 97px;
+    width: 98px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+}
+
+.three{
+    height: 97px;
+    width: 98px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+}
+
+.btn{
+    text-align: center;  
+    margin-bottom: 48px;
+    padding: 10px 20% 10px 20%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    background: #7AC100;
+    border-radius: 12px;
+    border: #7AC100;
+}
