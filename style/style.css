@@ -41,6 +41,7 @@
     gap: 24px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .one{
@@ -58,6 +59,13 @@
     color: #0080C1;
 }
 
+.one:hover{
+    line-height: 70px;
+    box-shadow: 0 0 15px 5px #004980;
+    transition: all 3s;
+    transform: scale(1.09);
+}
+
 .two{
     height: 97px;
     width: 98px;
@@ -71,6 +79,13 @@
     font-size: 64px;
     line-height: 72px;
     color: #0080C1;
+}
+
+.two:hover{
+    line-height: 70px;
+    box-shadow: 0 0 15px 5px #004980;
+    transition: all 3s;
+    transform: scale(1.09);
 }
 
 .three{
@@ -88,6 +103,13 @@
     color: #0080C1;
 }
 
+.three:hover{
+    line-height: 70px;
+    box-shadow: 0 0 15px 5px #004980;
+    transition: all 3s;
+    transform: scale(1.09); 
+}
+
 .btn{
     text-align: center;  
     margin-bottom: 48px;
@@ -99,4 +121,28 @@
     background: #7AC100;
     border-radius: 12px;
     border: #7AC100;
+}
+
+.change{
+    height: 100px;
+    width: 108px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 70px;
+    box-shadow: 0 0 15px 5px #004980;
+}
+
+.darkening{
+    background-color: #ace6f1;
+    color: #5fa4d8;
+    box-shadow: 0px 0px 25px 1px #5fa4d8;
+}
+
+.level{
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
