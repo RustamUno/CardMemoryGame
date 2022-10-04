@@ -4,13 +4,6 @@ const levelOne = document.querySelector('.one');
 const levelTwo = document.querySelector('.two');
 const levelThree = document.querySelector('.three');
 
-
-window.gameState = {
-    level: '1',
-    level: '2',
-    level: '3',
-}
-
 btnStart.addEventListener('click', (event) => {
     for (let lev of level) {
         let levelSel = lev.value;
