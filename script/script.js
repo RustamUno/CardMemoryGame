@@ -39,4 +39,3 @@ levelThree.addEventListener('click', (event) => {
     levelOne.classList.add('darkening');
     levelTwo.classList.add('darkening');
 });
-

@@ -123,12 +123,6 @@
     border: #7AC100;
 }
 
-.btn:hover{
-    transform: scale(1.02);
-    transition: all 3s;
-    box-shadow: 0 0 10px 5px #004980;
-}
-
 .change{
     height: 100px;
     width: 108px;
