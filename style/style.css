@@ -100,3 +100,32 @@
     border-radius: 12px;
     border: #7AC100;
 }
+
+.change{
+    height: 105px;
+    width: 116px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 70px;
+    box-shadow: 0 0 15px 5px #004980;
+}
+
+.change-btn{
+    text-align: center;  
+    margin-bottom: 48px;
+    padding: 15px 22% 15px 22%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+    color: #fff;
+    background: #7AC100;
+    border-radius: 12px;
+    border: #7AC100;
+    box-shadow: 0 0 5px 5px #004980;
+}
+
+.darkening{
+    background-color: #ace6f1;
+    color: #5fa4d8;
+    box-shadow: 0px 0px 25px 1px #5fa4d8;
+}
