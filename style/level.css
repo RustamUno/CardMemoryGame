@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background: #004980;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text {
+  display: flex;
+  gap: 57px;
+}
+
+.time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.time-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.btn {
+  width: 246px;
+  height: 48px;
+  border-radius: 12px;
+  background: #7ac100;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  text-align: center;
+}
+
+.box-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 800px;
+}
+
+.game {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(9, 8rem);
+  grid-template-rows: repeat(4, 10rem);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+  transform: rotateY(0deg);
+  width: 95px;
+  height: 133px;
+  border: 6px solid white;
+  border-radius: 4px;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: #e4fbff;
+}
+
+.flip-card {
+  transform: rotateY(180deg);
+}
