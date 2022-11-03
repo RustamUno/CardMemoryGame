@@ -1,4 +1,4 @@
-const cardList =()=>  [
+const cardList =  [
     {
       name: "6 бубны",
       image: "./img/6 бубны.svg",
