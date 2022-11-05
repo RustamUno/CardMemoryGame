@@ -63,15 +63,11 @@
   font-size: 64px;
   line-height: 72px;
   color: #0080c1;
+  flex-direction: column;
 }
 
 .level {
   appearance: none;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .btn {
@@ -149,6 +145,29 @@
   line-height: 32px;
   align-items: center;
   text-align: center;
+  transition: all 1s;
+
+}
+
+.restart:hover {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: restart 5s ease infinite;
+  box-shadow:rgb(14 8 71) 0 5px 15px;
+  transform: scale(1.01);
+
+}
+
+@keyframes restart {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .box-card {
@@ -182,7 +201,9 @@
   height: 133px;
   border: 6px solid white;
   border-radius: 4px;
+  background: #fff;
 }
+
 
 .face {
   width: 100%;
@@ -198,8 +219,22 @@
   backface-visibility: hidden;
   background-color: #e4fbff;
   pointer-events: none;
+  position: relative;
+  background: url(../img/short.svg) #e4fbff round;
 }
 
 .flip-card {
   transform: rotateY(180deg);
+}
+
+.animation{
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 2s cubic-bezier(0.18, 0.884, 0.33, 1.275);
+  box-shadow: rgba(14, 8, 71, 1) 0 5px 15px;
+  transform: rotateY(0deg);
+  width: 95px;
+  height: 133px;
+  border: 6px solid white;
+  border-radius: 4px;
 }
