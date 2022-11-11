@@ -70,7 +70,7 @@ function showTheFirstLevel() {
                 }
             cardData=cardData.concat(cardData);
             return cardData;
-    
+        
       }
     
       function shuffleCard(cards){
@@ -106,14 +106,10 @@ function showTheFirstLevel() {
             }
           
           }
-      
         
       function getCardField(){
-          const cardData = randomize();
-          // console.log(cardData);
-    
+          const cardData = randomize();    
           shuffleCard(cardData);
-          // console.log(cardData);
     
           cardData.forEach(item=>{
               const card = document.createElement("div");
@@ -128,35 +124,34 @@ function showTheFirstLevel() {
     
               face.src = item.image;
               face.setAttribute("name", item.name);
-          //     console.log(game);
 
-          card.addEventListener("click", (event)=>{
-            card.classList.toggle("flip-card")
-            arrayName.push(face.getAttribute("name"));
-            if(arrayName.length === 2){
-                  if(arrayName[0]===arrayName[1]){
-                        arrayCards.push(face.getAttribute("name"));
-                        arrayName = [];
-                        // console.log(arrayCards);
-                  }else{
-                        arrayName=[];
-                        gameResultsLose();
-                  }
-            }
-            if(arrayCards.length === 3){
-                  gameResults()
-            }
-          })
-          setTimeout(()=>card.classList.add("flip-card"), 1000);
-          setTimeout(()=>card.classList.remove("flip-card"), 3000);
-          
-          startOver.addEventListener("click", (event)=>{            
-            restart();
-            setTimeout(()=>card.classList.add("flip-card"), 1000);
-            setTimeout(()=>card.classList.remove("flip-card"), 3000);
-            })  
-          })
-          Interval = setInterval(startTimer, 10);
+                  card.addEventListener("click", (event)=>{
+                        card.classList.toggle("flip-card")
+                        arrayName.push(face.getAttribute("name"));
+                        if(arrayName.length === 2){
+                              if(arrayName[0]===arrayName[1]){
+                                    arrayCards.push(face.getAttribute("name"));
+                                    arrayName = [];
+                              }else{
+                                    arrayName=[];
+                                    gameResultsLose();
+                              }
+                        }
+                        if(arrayCards.length === 3){
+                              gameResults()
+                        }
+                  });
+
+                  setTimeout(()=>card.classList.add("flip-card"), 1000);
+                  setTimeout(()=>card.classList.remove("flip-card"), 3000);
+
+                  startOver.addEventListener("click", (event)=>{            
+                        restart();
+                        setTimeout(()=>card.classList.add("flip-card"), 1000);
+                        setTimeout(()=>card.classList.remove("flip-card"), 3000);
+                  })  
+            })
+            Interval = setInterval(startTimer, 10);
 
 
       }
@@ -204,6 +199,7 @@ function showTheFirstLevel() {
                   upBox.classList.remove("blur");
                   boxCard.classList.remove("blur");
                   gameResults.remove();
+                  location.reload();
             })
       }
       
@@ -238,6 +234,7 @@ function showTheFirstLevel() {
                   upBox.classList.remove("blur");
                   boxCard.classList.remove("blur");
                   gameResults.remove();
+                  location.reload();
             })
       }
 
