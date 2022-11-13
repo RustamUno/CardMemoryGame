@@ -194,12 +194,9 @@ function showTheFirstLevel() {
             spent.appendChild(btn);
 
             btn.addEventListener("click", (e)=>{
-                  restart();
-                  Interval = setInterval(startTimer, 10);
-                  upBox.classList.remove("blur");
-                  boxCard.classList.remove("blur");
-                  gameResults.remove();
-                  location.reload();
+                  if (window.confirm('Вы действительно хотите начать игру заново?')) {
+                        location.reload();
+                    }
             })
       }
       
@@ -229,12 +226,9 @@ function showTheFirstLevel() {
             spent.appendChild(btn);
 
             btn.addEventListener("click", (e)=>{
-                  restart();
-                  Interval = setInterval(startTimer, 10);
-                  upBox.classList.remove("blur");
-                  boxCard.classList.remove("blur");
-                  gameResults.remove();
-                  location.reload();
+                  if (window.confirm('Вы действительно хотите начать игру заново?')) {
+                        location.reload();
+                    }
             })
       }
 
@@ -441,11 +435,9 @@ function showTheSecondLevel() {
             spent.appendChild(btn);
 
             btn.addEventListener("click", (e)=>{
-                  restart();
-                  Interval = setInterval(startTimer, 10);
-                  upBox.classList.remove("blur");
-                  boxCard.classList.remove("blur");
-                  gameResults.remove();
+                  if (window.confirm('Вы действительно хотите начать игру заново?')) {
+                        location.reload();
+                    }
             })
       }
       
@@ -475,15 +467,14 @@ function showTheSecondLevel() {
             spent.appendChild(btn);
 
             btn.addEventListener("click", (e)=>{
-                  restart();
-                  Interval = setInterval(startTimer, 10);
-                  upBox.classList.remove("blur");
-                  boxCard.classList.remove("blur");
-                  gameResults.remove();
+                  if (window.confirm('Вы действительно хотите начать игру заново?')) {
+                        location.reload();
+                    }
             })
       }
 
-  }
+}
+  
 
 //Третье игровое поле
 function showTheThirdLevel() {
@@ -688,11 +679,9 @@ function showTheThirdLevel() {
             spent.appendChild(btn);
 
             btn.addEventListener("click", (e)=>{
-                  restart();
-                  Interval = setInterval(startTimer, 10);
-                  upBox.classList.remove("blur");
-                  boxCard.classList.remove("blur");
-                  gameResults.remove();
+                  if (window.confirm('Вы действительно хотите начать игру заново?')) {
+                        location.reload();
+                    }
             })
       }
       
@@ -722,11 +711,10 @@ function showTheThirdLevel() {
             spent.appendChild(btn);
 
             btn.addEventListener("click", (e)=>{
-                  restart();
-                  Interval = setInterval(startTimer, 10);
-                  upBox.classList.remove("blur");
-                  boxCard.classList.remove("blur");
-                  gameResults.remove();
+                  if (window.confirm('Вы действительно хотите начать игру заново?')) {
+                        location.reload();
+                    }
             })
       }
+
 }
